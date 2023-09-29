@@ -1,4 +1,4 @@
-# CME_1211_HW
+# CME_1211_HW1
 DEU CME 1211 Algorithms and Programming I Homework
 CME 1211 Algorithms and Programming I Homework 1
 Calendar
@@ -83,3 +83,144 @@ Winter
 26 December 2019 Thursday
 7 January 2020 Tuesday
 17 January 2020 Friday
+
+# CME_1211_HW2
+DEU Game
+Write a C# program for a simple DEU game.
+There are three arrays (A1, A2, and A3) with 15 in size. Initially, they are empty.
+There are two players: player1 and player2.
+The aim of the game is to make the "D-E-U" sequence (straight or reverse) among connected squares (horizontally or
+vertically or diagonally).
+The game turns alternate between players after each move. At each turn of the game, the program randomly inserts one of the three leters “D”, “E” or “U” to any array for a player. In other words, the program determines both the letter and target array randomly.
+At the begging of the game, each player has a score of 120. At each turn, the score of the player decreases by 5 points.
+ The game is over
+- if a player succeeds in creating a ”DEU” pattern
+or
+- if all arrays are filled up and there is no any “DEU”.
+The program must display all steps until the game is over.
+There are two arrays to store a high score table:
+(the winner is the player who made the first “DEU”) (the game is a draw (tie))
+string[] names = {“Derya”, “Elife”, “Fatih”, “Ali”, “Azra”, “Sibel”, “Cem”, “Nazan”, “Mehmet”, “Nil”, “Can”, “Tarkan”} int[] scores = {100, 100, 95, 90, 85, 80, 80, 70, 55, 50, 30, 30 }
+At the end of the game, the program must print the high score table. If the point of the winner exists in the score table, the player ID (Player1 or Player2) and his/her score are placed under the old one. First, insert the new element to the arrays, and then print the arrays.
+Don’t take any input from the user.
+If you want, you may write your own “procedure(s) and/or function(s)”.Sample outputs:
+ 
+Sample output 1:
+Player1:
+A1 E
+A2
+A3
+Player2: A1 E
+(P1-115 P2-120)
+(P1-115 P2-115)
+Sample output 2:
+Player1:
+A1
+A2 U
+A3
+Player2: A1
+(P1-115 P2-120)
+(P1-115 P2-115)
+Sample output 3:
+Player1:
+A1
+A2
+A3 D
+Player2: A1
+(P1-115 P2-120)
+(P1-115 P2-115)
+A2 U A3
+Player1:
+A1 E
+A2 U D
+A3
+Player2:
+A1 E D
+A2 U D
+A3
+Player1:
+A1 E D
+A2 U D E
+A3
+Player2:
+A1 E D
+A2 U D E
+A3 D
+Player1:
+A1 E D
+A2 U D E U
+A3 D
+(P1-110 P2-115)
+(P1-110 P2-110)
+(P1-105 P2-110)
+(P1-105 P2-105)
+(P1-100 P2-105)
+winner: Player1
+Name Score
+Derya 100 Elife 100 Player1 100 Fatih 95 ...
+A2 U A3 D
+Player1:
+A1 E
+A2 U
+A3 D
+Player2:
+A1 E
+A2 U
+A3 D U
+Player1:
+A1 E
+A2 U E
+A3 D U
+Player2:
+A1 E
+A2 U E
+A3 D U E
+Player1:
+A1 E
+A2 U E
+A3 D U E U
+Player2:
+A1 E
+A2 U E U
+A3 D U E U
+Player1:
+A1 E D
+A2 U E U
+A3 D U E U
+(P1-110 P2-115)
+(P1-110 P2-110)
+(P1-105 P2-110)
+(P1-105 P2-105)
+(P1-100 P2-105)
+(P1-100 P2-100)
+(P1-95 P2-100)
+winner: Player1
+Name Score
+Derya 100 Elife 100 Fatih 95 Player1 95 ...
+A2 E A3 D
+Player1:
+A1
+A2 E
+A3 D D
+Player2:
+A1
+A2 E
+A3 D D
+Player1:
+A1
+A2 E
+A3 D D D
+... ... ...
+Player2:
+A1 E U U E E D D U U U D U D D D
+A2 E U U E E D D D U U E E E U E
+A3 D D D E E U E E U U E E E U D
+Tie
+Name Score
+Derya 100 Elife 100 Fatih 95 Ali 90 ...
+(P1-110 P2-115)
+(P1-110 P2-110)
+(P1-105 P2-110)
+(P1-... P2-...)
+
+
