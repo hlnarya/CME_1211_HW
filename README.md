@@ -231,9 +231,7 @@ The text contains only English alphabet letters and two punctuations dot (.) and
 The pattern can contain letters, as well as either the character(s) of “*” or the character(s) of “-
 ”, but not both of them.
 The symbol “*” corresponds to any number of letters (zero or more).
-The symbol “
--
-“ corresponds to only one letter.
+The symbol “-“ corresponds to only one letter.
 For example; if a pattern contains a single “*”, this symbol should match any number of letters in the word; the other
 characters in the word and pattern must be equal.
 If the same word repeats more than one times, the program must print it only one time.
