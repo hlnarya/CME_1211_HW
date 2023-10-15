@@ -223,4 +223,65 @@ Derya 100 Elife 100 Fatih 95 Ali 90 ...
 (P1-105 P2-110)
 (P1-... P2-...)
 
-
+# CME_1211_HW3
+Word World
+Write a C# program that takes a text and a pattern from the user and prints all the words in the text that corresponds to this
+pattern.
+The text contains only English alphabet letters and two punctuations dot (.) and comma (,).
+The pattern can contain letters, as well as either the character(s) of “*” or the character(s) of “-
+”, but not both of them.
+The symbol “*” corresponds to any number of letters (zero or more).
+The symbol “
+-
+“ corresponds to only one letter.
+For example; if a pattern contains a single “*”, this symbol should match any number of letters in the word; the other
+characters in the word and pattern must be equal.
+If the same word repeats more than one times, the program must print it only one time.
+If you want, you may write your own “procedure(s) and/or function(s)”
+.
+Examples:
+Input: "Miss Polly had a poor dolly, who was sick. She called for the talled doctor Solly to come
+quick. He knocked on the DOOR like a actor in the healthcare sector.";
+Input: -olly
+Output: Polly
+dolly
+Solly
+Input: *iCK
+Output: sick
+quick
+Input: -o-R
+Output: poor
+DOOR
+Input: ---
+Output: had
+who
+was
+She
+for
+the
+Input: *ctor
+Output: doctor
+actor
+sector
+Input: *led
+Output: called
+talled
+Input: do*
+Output: dolly
+doctor
+DOOR
+Input: -al-e-
+Output: called
+talled
+Input: h*al*re
+Output: healthcare
+Input: *ed
+Output: called
+talled
+knocked
+Input: *
+Output: Miss
+Polly
+... all words
+Input: -
+Output: a
